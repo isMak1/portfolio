@@ -4,6 +4,18 @@ import RahmAuto from "@/public/rahmauto.png";
 import Amir from "@/public/amir.png";
 import CPM from "@/public/cpm.png";
 import Image from "next/image";
+
+export const pages = [
+  {
+    name: "Portfolio",
+    hash: "#portfolio",
+  },
+  {
+    name: "Agency",
+    hash: "#agency",
+  }
+] as const;
+
 export const links = [
   {
     name: "Home",

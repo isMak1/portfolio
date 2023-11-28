@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
+import ParticlesContainer from "@/components/ParticlesContainer";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
 import Head from 'next/head';
@@ -34,10 +35,10 @@ export default function RootLayout({
 
       <ThemeContextProvider>
         <ActiveSectionContextProvider>
+          <ParticlesContainer />
           <Header />
           {children}
           <Footer />
-
           <Toaster position="top-right" />
           <ThemeSwitch />
         </ActiveSectionContextProvider>

@@ -15,7 +15,12 @@ export default function Projects() {
       <div>
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
-            <Project {...project} />
+            <a
+              href={project.link}
+              target="_blank noopener"
+            >
+              <Project {...project} />
+            </a>
           </React.Fragment>
         ))}
       </div>
